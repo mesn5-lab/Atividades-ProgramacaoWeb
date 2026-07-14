@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+
+    <!--link: style-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--link: fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>GuessNumber</h1>
+        <p>Encontre o número secreto!</p>
+    </header>
+
+    <main>
+        <div class="box">
+            <input type="text" id="game-input" placeholder="Insira seu palpite!">
+            <button id="start-button">Jogar</button>
+        </div>
+
+        <div class="result-card-container">
+            <p id="initial-message">Clique no botão "Jogar" para iniciar o jogo e tentar adivinhar o número entre 1 e 50.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

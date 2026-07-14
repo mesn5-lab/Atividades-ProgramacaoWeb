@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: linear-gradient(135deg, #8baea5 0%, #beaa8c 50%, #bf8a6e 100%);
+    color: #7d6855;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1::after {
+    content: "✦";
+    right: -25px;
+    top: 5px;
+    font-size: 20px;
+    color: #fcae91;
+    opacity: 0.8;
+}
+
+header h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    color: #d16d54;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+header p {
+    font-size: 20px;
+    color: #8d7355;
+    font-weight: 400;
+}
+
+main {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.45);
+    width: 100%;
+    padding: 35px 45px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 30px rgba(220, 180, 160, 0.69);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#game-input {
+    font-family: "Montserrat", sans-serif;
+    flex: 1;
+    padding: 18px 20px;
+    background: #ffffff;
+    border: 2px solid #e0cbb6;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #7d6855;
+    text-align: center;
+    outline: none;
+}
+
+#game-input:focus {
+    border-color: #7d6855;
+    box-shadow: 0 0 10px rgba(209, 107, 84, 0.15);
+}
+
+#game-input::placeholder {
+    color: #a89482;
+}
+
+#start-button {
+    font-family: "Oswald", sans-serif;
+    width: 180px;
+    height: 60px;
+    background: linear-gradient(to bottom, #f0ab4e, #e0932c);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(224, 147, 44, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+#start-button:hover {
+    filter: brightness(1.05);
+}
+
+.result-card-container {
+    background: #ffffff;
+    width: 85%;
+    max-width: 540px;
+    padding: 22px 30px;
+    border-radius: 12px;
+    border: 2px solid #639a95;
+    box-shadow: 0 8px 25px rgba(99, 154, 149, 0.4);
+    text-align: center;
+}
+
+#initial-message {
+    font-size: 18px;
+    color: #4a5857;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.result-card-container::after {
+    content: "Adivinhe";
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #ede3d7;
+    color: #7d6855;
+    padding: 4px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
