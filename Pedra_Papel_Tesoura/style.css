@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "'Segoe UI', Tahoma, Geneva, Verdana", sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-image: url('plano_de_fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.arena {
+    background: rgba(26, 54, 58, 0.65);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 50px 40px;
+    max-width: 550px;
+    width: 90%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 .icon-pedra {
+    color: #b0bec5; 
+}
+        
+header h1 .icon-papel {
+    color: #ffecb3; 
+}
+        
+header h1 .icon-tesoura {
+    color: #ffb74d; 
+}
+
+header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #a5d6a7;
+    margin-bottom: 10px;
+}
+
+.jogar {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+.jogar:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.6);
+}
+
+.secao-interativa {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.titulo {
+    font-size: 20px;
+    color: #a5d6a7;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.texto-painel, .textoPainel {
+    font-size: 16px;
+    color: #cfd8dc;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.campoEntrada {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.25);
+    color: white;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn-acao {
+    color: white;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-ok {
+    background-color: #2e7d32;
+}
+
+.btn-ok:hover {
+    background-color: #388e3c;
+}
+
+.btn-cancelar {
+    background-color: #c62828;
+}
+
+.btn-cancelar:hover {
+    background-color: #d32f2f;
+}
+
+.oculto {
+    display: none !important;
+}

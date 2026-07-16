@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel, Tesoura</title>
+
+    <!--link: style-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--link: ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!--link: fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="arena">
+        <header>
+            <h1>
+                <i class="fa-solid fa-hand-fist icon-pedra"></i>
+                <i class="fa-solid fa-hand icon-papel"></i>
+                <i class="fa-solid fa-hand-scissors icon-tesoura"></i>
+            </h1>
+            <h1>Pedra, Papel, Tesoura</h1>
+            <p>Desafie o computador!</p>
+        </header>
+
+        <button id ="btn-jogar" class="jogar" onclick="abrirPainel()">Clique aqui para jogar</button>
+
+        <div id="painel" class="secao-interativa oculto">
+            <h3 class="titulo-painel">Dinâmica do Jogo</h3>
+            <p class="texto-painel">Digite abaixo a sua escolha para jogar (pedra, papel ou tesoura):</p>
+            <input type="text" id="campoJogador" class="campoEntrada" placeholder="pedra, papel ou tesoura" autocomplete="off">
+
+            <div class="botoes">
+                <button class="btn-acao btn-ok" onclick="processarJogada()">Confirmar</button>
+                <button class="btn-acao btn-cancelar" onclick="cancelarJogada()">Cancelar</button>
+            </div>
+        </div>
+
+        <div id="resultado" class="secao-interativa oculto">
+            <h3 class="titulo">Resultado</h3>
+            <p id="textoResultado" class="textoPainel"></p>
+
+            <div class="botoes">
+                <button class="btn-acao btn-ok" onclick="reiniciarArena()">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
