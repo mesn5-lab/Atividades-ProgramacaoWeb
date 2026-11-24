@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h1>Jogo da Velha</h1>
+
+        <p id="status" class="status">Vez do jogador X</p>
+
+        <div id="tabuleiro" class="tabuleiro">
+            <button class="celula" data-indice="0" aria-label="Linha 1, coluna 1"></button>
+            <button class="celula" data-indice="1" aria-label="Linha 1, coluna 2"></button>
+            <button class="celula" data-indice="2" aria-label="Linha 1, coluna 3"></button>
+            <button class="celula" data-indice="3" aria-label="Linha 2, coluna 1"></button>
+            <button class="celula" data-indice="4" aria-label="Linha 2, coluna 2"></button>
+            <button class="celula" data-indice="5" aria-label="Linha 2, coluna 3"></button>
+            <button class="celula" data-indice="6" aria-label="Linha 3, coluna 1"></button>
+            <button class="celula" data-indice="7" aria-label="Linha 3, coluna 2"></button>
+            <button class="celula" data-indice="8" aria-label="Linha 3, coluna 3"></button>
+        </div>
+
+        <div class="placar">
+            <div>X: <strong id="placar-x">0</strong></div>
+            <div>Empates: <strong id="placar-empates">0</strong></div>
+            <div>O: <strong id="placar-o">0</strong></div>
+        </div>
+
+        <button id="reiniciar" class="botao">Nova partida</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

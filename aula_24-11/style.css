@@ -1,0 +1,114 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+    background: #eef2f7;
+    color: #1f2937;
+   
+    /* =====================================================================
+       ETAPA 1 (Parte A - 0,5 pt): Centralize o .card na tela usando Flexbox
+       Dica: display, align-items, justify-content
+       ===================================================================== */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 380px;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;    
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.status {
+    min-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.tabuleiro {
+    margin: 1rem 0;
+
+    /* =====================================================================
+       ETAPA 2 (1,0 pt): Transforme o tabuleiro em uma grade 3x3 usando Grid
+       Dica: display: grid, grid-template-columns e gap (8px)
+       ===================================================================== */
+    
+}
+
+.celula {
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 8px;
+    background: #e2e8f0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.celula:hover:not(:disabled) {
+    background: #cbd5e1;
+}
+
+.celula:disabled {
+    cursor: default;
+}
+
+.celula.x {
+    color: #2563eb;
+}
+
+.celula.o {
+    color: #dc2626;
+}
+
+.celula.vencedora {
+    background: #bbf7d0;
+}
+
+.placar {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    background: #f1f5f9;
+
+    
+    
+    /* =====================================================================
+       ETAPA 1 (Parte B - 0,5 pt): Alinhe os itens do placar lado a lado
+       Dica: display: flex e justify-content
+       ===================================================================== */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #1d4ed8;
+}
